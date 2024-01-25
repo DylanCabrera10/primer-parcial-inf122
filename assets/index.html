@@ -1,186 +1,97 @@
-<<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Perfil</title>
-     <!-- Enlace a las fuentes de Google -->
-     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Nunito:wght@300;400;500;700&family=Roboto:wght@500;700;900&display=swap"
-         rel="stylesheet">
-     <!-- Título del documento -->
-     <title>Document</title>
- </head>
-    <style>
-        root {
-            --white: #F1F2F4; /* Color blanco */
-            --black: #0C151D; /* Color negro */
-            --yellow: #FFE071; /* Color amarillo */
-            --blue: #3E64AA;
-            --gread: #A3ABB2;
-            --sm: 16px; /* Tamaño de fuente pequeño */
-            --md: 22px; /* Tamaño de fuente mediano */
-            --lg: 46px; /* Tamaño de fuente grande */
-        }    
-        body {
-   
-            font-family: 'Nunito'; /* Tipo de fuente */
-            margin: 0;
-            padding: 0;
-            background-color: var(--black); /* Cambiando a negro */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .profile-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: var(--black); /* Cambiando a negro */
-            box-shadow: 0 2px 4px var(--gread);
-            margin-top: 20px;
-            border-radius: 5px;
-        }
-
-        .profile-picture {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-        }
-
-        .profile-info {
-            margin-left: 20px;
-        }
-
-        .social-icons {
-            display: flex;
-            margin-top: 20px;
-        }
-
-        .social-icon {
-            margin-right: 10px;
-            cursor: pointer;
-            ; /* Cambia el color a negro para que se vea en el fondo blanco */
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px;
-            width: 100%;
-        }
-
-        .box {
-            flex: 1;
-            text-align: center;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-right: 10px;
-            border-radius: 5px;
-        }
-
-        .buttons-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-right: 10px;
-            text-decoration: none;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .button-white {
-            background-color: var(--white);
-            color:var(--black);
-            border: 1px solid #333;
-        }
-
-        .button-black {
-            background-color: #333;
-            border: 1px solid #333;
-        }
-
-        .additional-buttons {
-            background-color: var(--black);;
-            margin-top: 20px;
-        }
-
-        .image-row {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-            width: 100%;
-        }
-
-        .image {
-            width: 30%;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-    <div class="profile-container">
-        <img class="profile-picture" src="imagenes/perfil_picture.jpeg">
-        <div class="profile-info">
-            <h2>Victor Alvarado</h2>
-            <p>Software Engineer</p>
+    <div class="main">
+        <div class="card-container">
+            <div class="card-icon">
+                <figure>
+                    <img src="fotoperfil/100050214.jpg" alt="" class="logo">
+                </figure>
+            </div>
+            <div class="icon-text">
+                <h2 class="icon-title">Victor Alvarado</h2>
+                <p class="icon-text">Software Enginner</p>
+                <img src="assets/icons/github.svg" alt="">
+                <img src="assets/icons/twitter.svg" alt="">
+                <img src="assets/icons/linkedin.svg" alt="">
+                <img src="assets/icons/youtube.svg" alt="">
+            </div>
         </div>
-        <div class="social-icons">
-            <a href="https://github.com " class="social-icon">github</a>
-            <a href="https://bo.linkedin.com/" class="social-icon">linkend</a>
-            <a href="https://bo.linkedin.com/" class="social-icon">linkend</a>
-            <!-- Agrega más iconos según sea necesario -->
+        <div class="card-container-exp">
+            <div class="icon-text-exp">
+                <h2 class="icon-title">7</h2>
+                <p class="icon-text">Years of work experience</p>
+            </div>
+            <div class="icon-text-exp">
+                <center><h2 class="icon-title">50+</h2></center>
+                <p class="icon-text">Completed projects</p>
+            </div>
+            <div class="icon-text-exp">
+                <h2 class="icon-title">20+</h2>
+                <p class="icon-text">Satisfied customers</p>
+            </div>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="box">
-            <title>7</title>
-            <p>7</p>
-            <p>Years of work experience</p>
+        <div class="card-container-btn">
+            <div class="icon-text-btn">
+                <input type="submit" value="Download CV" class="btn-cv">
+            </div>
+            <div class="icon-text-btn">
+                <input type="submit" value="Contact me" class="btn-cm">
+            </div>
         </div>
-        <div class="box">
-            <p>50+</p>
-            <p>Completed projects</p>
+        <div class="card-container-por">
+            <div class="icon-text-por">
+                <input type="submit" value="Portafolio" class="btn-por">
+            </div>
+            <div class="icon-text-por">
+                <input type="submit" value="Skills" class="btn-sk">
+            </div>
         </div>
-        <div class="box">
-            <p>20+</p>
-            <p>Satisfied customers</p>
+        <div class="card-container-img">
+            <div class="card-icons">
+                <figure>
+                    <img src="assets/images/pictures_wall.jpeg" alt="">
+                </figure>
+            </div>
+            <div class="card-icons">
+                <figure>
+                    <img src="assets/images/pictures_wall.jpeg" alt="">
+                </figure>
+            </div>
         </div>
-    </div>
-
-    <div class="buttons-container">
-        <a href="url_para_descargar_CV" class="button button-white">Download CV</a>
-        <a href="url_de_contacto" class="button button-black">Contact Me</a>
-    </div>
-
-    <div class="additional-buttons">
-        <a href="#" class="button button-white">Portofio</a>
-        <a href="#" class="button button-black">Skills</a>
-    </div>
-
-    <div class="image-row">
-        <img class="image" src="images/bussiness_man.png">
-        <img class="image" src="images/issima_page.png">
-    </div>
-    
-    <div class="image-row">
-        <img class="image" src="images/kitchen.jpeg">
-        <img class="image" src="ruta_imagen_4">
-    </div>
-    
-    <div class="image-row">
-        <img class="image" src="images/mobile_app.png">
-        <img class="image" src="images/pictures_wall.jpeg">
+        <div class="card-container-img">
+            <div class="card-icons">
+                <figure>
+                    <img src="assets/images/pictures_wall.jpeg" alt="">
+                </figure>
+            </div>
+            <div class="card-icons">
+                <figure>
+                    <img src="assets/images/pictures_wall.jpeg" alt="">
+                </figure>
+            </div>
+        </div>
+        <div class="card-container-img">
+            <div class="card-icons">
+                <figure>
+                    <img src="assets/images/pictures_wall.jpeg" alt="">
+                </figure>
+            </div>
+            <div class="card-icons">
+                <figure>
+                    <img src="assets/images/pictures_wall.jpeg" alt="">
+                </figure>
+            </div>
+        </div>
     </div>
 </body>
 </html>
